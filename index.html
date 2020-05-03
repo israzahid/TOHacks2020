@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <title>Plutus: The Finance Bot</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<main>
+  <header>
+    <h1 id="title"><strong>Pluto asks...</strong></h1>
+  </header>
+ 
+<body>
+  <form id="survey-form">
+   <div class = "questions">
+    <div>
+      <label>Question 1</label>
+      <p>How old are you?</p>
+    </div>
+    <label><input type="radio" name="age" value="younger-than-18" id="age"> Younger than 18</label>
+    <label><input type="radio" name="age" value="18-25" id="age"> 18-25</label>
+    <label><input type="radio" name="age" value="26-35" id="age"> 26-35</label>
+    <label><input type="radio" name="age" value="36-45" id="age"> 36-45</label>
+    <label><input type="radio" name="age" value="45-55" id="age"> 45-55</label>
+    <label><input type="radio" name="age" value="older" id="age"> 55+</label>
+    </div>
+  
+    <div class = "questions">
+    <div>
+      <label id="q2">Question 2</label>
+      <p>Are you currently in school?</p>
+    </div>
+    <label><input type="radio" name="edu" value="no"> No</label>
+    <label><input type="radio" name="edu" value="post"> Yes, post-secondary</label>
+    <label><input type="radio" name="edu" value="high"> Yes, high school or below</label>
+    <label><input type="radio" name="edu" value="part"> Yes, part-time</label>
+    <label><input type="radio" name="edu" value="grad"> Yes, grad-school</label>
+    </div>
+    
+    <div class = "questions">
+    <div>
+      <label id="q3">Question 3</label>
+    <p>Which best describes your state of employment</p>
+    </div>
+    <label><input type="radio" name="employment" value="part"> Part-time</label>
+    <label><input type="radio" name="employment" value="full"> Full-time</label>
+    <label><input type="radio" name="employment" value="not"> Not Employed</label>
+  <label><input type="radio" name="employment" value="retired"> Retired</label>
+    </div>
+
+  <div class = "questions">
+    <div>
+      <label>Question 4</label>
+      <p>How many people are financially dependent on you?</p>
+    </div>
+    <label><input type="radio" name="dependent" value="one"> 1</label>
+    <label><input type="radio" name="dependentt" value="two"> 2</label>
+    <label><input type="radio" name="dependent" value="three+"> 3 or more</label>
+  <label><input type="radio" name="dependent" value="none"> No oen is financially dependent on me</label>
+    </div>
+ 
+    <div class = "questions">
+    <div>
+      <label>Question 5</label>
+      <p>How much are your monthly expenses?</p>
+    </div>
+    <label><input type="radio" name="expenses" value="none"> No expenses</label>
+    <label><input type="radio" name="expenses" value="less-than"> Less than $150</label>
+    <label><input type="radio" name="expenses" value="150-500"> $150-$500</label>
+  <label><input type="radio" name="expenses" value="500-1000"> $500-$1000</label>
+    <label><input type="radio" name="expenses" value="above"> Greater than $1000</label> 
+    </div>
+
+    <div class = "questions">
+    <div>
+      <label>Question 6</label>
+      <p>How much debt do you owe?</p>
+    </div>
+    <label><input type="radio" name="debt" value="none"> No Debt</label>
+    <label><input type="radio" name="debt" value="less"> Less than $1000</label>
+    <label><input type="radio" name="debt" value="1-2"> $1000-$2000</label>
+  <label><input type="radio" name="debt" value="2-5"> $2000-$5000</label>
+    <label><input type="radio" name="debt" value="greater"> Greater than $5000</label>
+    </div>
+  
+  <button id="submit" type="submit">Next page</button>
+
+  </form>
+  <script src="./app.js"></script>
+</body>
+</main>
+
+</html>
